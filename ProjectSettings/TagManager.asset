@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - CinemachineTarget
+  - FxTemporaire
+  - Bubble
   layers:
   - Default
   - TransparentFX
@@ -26,9 +28,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - Outlined
+  - Kopuk
+  - Ates
   - 
   - 
   - 
@@ -41,4 +43,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Effect
+    uniqueID: 2207348969
     locked: 0
