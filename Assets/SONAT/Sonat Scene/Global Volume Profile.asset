@@ -15,6 +15,7 @@ MonoBehaviour:
   components:
   - {fileID: 5838936846738845981}
   - {fileID: 1855924575523879759}
+  - {fileID: 7906858127440387845}
 --- !u!114 &1855924575523879759
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -33,13 +34,13 @@ MonoBehaviour:
     m_Value: 0
   contrast:
     m_OverrideState: 1
-    m_Value: 100
+    m_Value: 20
   colorFilter:
     m_OverrideState: 0
-    m_Value: {r: 0.6597539, g: 0.6597539, b: 0.6597539, a: 1}
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 27
   saturation:
     m_OverrideState: 1
     m_Value: 100
@@ -84,3 +85,22 @@ MonoBehaviour:
   dirtIntensity:
     m_OverrideState: 0
     m_Value: 0
+--- !u!114 &7906858127440387845
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 221518ef91623a7438a71fef23660601, type: 3}
+  m_Name: WhiteBalance
+  m_EditorClassIdentifier: 
+  active: 1
+  temperature:
+    m_OverrideState: 1
+    m_Value: 60
+  tint:
+    m_OverrideState: 1
+    m_Value: 60
