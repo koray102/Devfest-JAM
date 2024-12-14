@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class RandomForce : MonoBehaviour
 {
-    public float forceAmount = 10f; // Uygulamak istediðiniz kuvvet miktarý
+    public float forceAmount = 10f; // Kuvvet miktarý
+    public float rotationSpeed = 100f; // Rotasyon hýzý
 
     private Rigidbody rb;
-
+    private bool isStopped = false; // Hareketi ve rotasyonu durdurma kontrolü
+    private bool die = false;
     void Start()
     {
         // Rigidbody bileþenini al
@@ -19,10 +21,38 @@ public class RandomForce : MonoBehaviour
 
             // Kuvveti uygula
             rb.AddForce(randomDirection * forceAmount, ForceMode.Impulse);
+
+            // Rastgele bir rotasyon uygula
+            Vector3 randomTorque = Random.onUnitSphere * rotationSpeed; // Rastgele dönme momenti (torque)
+            rb.AddTorque(randomTorque, ForceMode.Impulse);
         }
         else
         {
             Debug.LogError("Rigidbody bileþeni bulunamadý!");
+        }
+
+        // 2 saniye sonra hareketi ve rotasyonu durdur
+        Invoke("StopMotionAndRotation", 2f);
+    }
+
+    void StopMotionAndRotation()
+    {
+        if (rb != null)
+        {
+            rb.velocity = Vector3.zero; // Hareketi durdur
+            rb.angularVelocity = Vector3.zero; // Rotasyonu durdur
+        }
+
+        isStopped = true;
+    }
+
+    void Update()
+    {
+        if (isStopped && !die)
+        {
+            // Durdurulduktan sonra pozisyon ve rotasyonu kilitle
+            rb.constraints = RigidbodyConstraints.FreezeAll;
+            die = true;
         }
     }
 }

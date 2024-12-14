@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
+
 public class FireExtinguisher : MonoBehaviour
 {
     public ParticleSystem fireParticleSystem;
