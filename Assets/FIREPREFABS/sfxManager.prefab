@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3967161196098507849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3967161196098507851}
+  - component: {fileID: 3967161196098507848}
+  m_Layer: 0
+  m_Name: sfxManager
+  m_TagString: SFX
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3967161196098507851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3967161196098507849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 127.32388, y: 243.93349, z: -193.54927}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3967161196098507848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3967161196098507849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c76292df2e27d444aa4e205f296cec6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: dialogueSkip
+    clip: {fileID: 8300000, guid: 47201b1727c4c744db4d198f4eed0d11, type: 3}
+    volume: 1
+    pitch: 1
+  - name: breathIn
+    clip: {fileID: 8300000, guid: b35e0fd1d041a8641b39392b8c91c3e2, type: 3}
+    volume: 1
+    pitch: 1
+  - name: breathOut
+    clip: {fileID: 8300000, guid: 1c3665d49b7b28841abb9d9fa86d0388, type: 3}
+    volume: 1
+    pitch: 1
+  - name: radioSound
+    clip: {fileID: 8300000, guid: 34e871d056d21a04da8f07cfa1f4f366, type: 3}
+    volume: 1
+    pitch: 1
+  - name: heartBeat
+    clip: {fileID: 8300000, guid: 2aab93e6e8f2d404db5d95da76f3df61, type: 3}
+    volume: 1
+    pitch: 1
+  - name: smokeSound
+    clip: {fileID: 8300000, guid: 22f33a20795c8c941a27b0cc0af0b4ad, type: 3}
+    volume: 1
+    pitch: 1
+  - name: burningSound
+    clip: {fileID: 8300000, guid: 085679f144f92d54291efc4b751db71a, type: 3}
+    volume: 1
+    pitch: 1

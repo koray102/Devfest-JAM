@@ -3,7 +3,12 @@ guid: 0bf58c4a4edb2e948bd1b3172fd57cc8
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GasMaskBlue
+    second: {fileID: 2100000, guid: 34c6fd2e694e53843b77efe27710c899, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
