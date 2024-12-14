@@ -8707,6 +8707,21 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5668162738771241677, guid: 5befa2f06dcd5d24b9b0953e28a70920,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.4400218
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668162738771241677, guid: 5befa2f06dcd5d24b9b0953e28a70920,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25951624
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668162738771241677, guid: 5befa2f06dcd5d24b9b0953e28a70920,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.08439803
+      objectReference: {fileID: 0}
     - target: {fileID: 5673374724445607745, guid: 5befa2f06dcd5d24b9b0953e28a70920,
         type: 3}
       propertyPath: m_StaticEditorFlags
