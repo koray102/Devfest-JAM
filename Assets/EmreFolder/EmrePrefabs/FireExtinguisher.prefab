@@ -114,7 +114,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2604205831669571781}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5096843444847936460
 MeshFilter:
@@ -197,8 +197,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4068118502183266070}
-  - {fileID: 9025617269178139460}
   - {fileID: 8576466918621120326}
+  - {fileID: 3383750073741784959}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -252,87 +252,78 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &8023191629313910993
-GameObject:
+--- !u!1001 &2990328300157128852
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9025617269178139460}
-  - component: {fileID: 5809950390955125208}
-  - component: {fileID: 2388449929871835447}
-  m_Layer: 0
-  m_Name: ExtinguisherPipe
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9025617269178139460
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2604205831669571781}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ff6b3c6cabe39734fa9cbd89b870b6e6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff6b3c6cabe39734fa9cbd89b870b6e6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.025035579
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff6b3c6cabe39734fa9cbd89b870b6e6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.20786569
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff6b3c6cabe39734fa9cbd89b870b6e6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0012058965
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff6b3c6cabe39734fa9cbd89b870b6e6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff6b3c6cabe39734fa9cbd89b870b6e6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff6b3c6cabe39734fa9cbd89b870b6e6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff6b3c6cabe39734fa9cbd89b870b6e6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff6b3c6cabe39734fa9cbd89b870b6e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff6b3c6cabe39734fa9cbd89b870b6e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ff6b3c6cabe39734fa9cbd89b870b6e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff6b3c6cabe39734fa9cbd89b870b6e6,
+        type: 3}
+      propertyPath: m_Name
+      value: "FireUcuK\xF6p\xFCkAtan"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ff6b3c6cabe39734fa9cbd89b870b6e6, type: 3}
+--- !u!4 &3383750073741784959 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ff6b3c6cabe39734fa9cbd89b870b6e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 2990328300157128852}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8023191629313910993}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1744676, y: 0.17400001, z: 0.1712232}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2604205831669571781}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5809950390955125208
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8023191629313910993}
-  m_Mesh: {fileID: 8679645627902557732, guid: a40d7de12e7089f4783a0aca6f61d4a4, type: 3}
---- !u!23 &2388449929871835447
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8023191629313910993}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 2f8a238da38e6b64f83ce5fe62d3ca5f, type: 2}
-  - {fileID: 2100000, guid: e387a2b47aa460d4fa2268b96395b8fc, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}

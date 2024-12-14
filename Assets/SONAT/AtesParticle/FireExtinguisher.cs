@@ -7,7 +7,7 @@ public class FireExtinguisher : MonoBehaviour
     public ParticleSystem lastPuff;
     public float can = 100;
 
-    private bool YokOlcak = false;
+    internal bool YokOlcak = false;
 
     void OnParticleCollision(GameObject other)
     {   
