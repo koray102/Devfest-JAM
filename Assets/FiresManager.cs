@@ -1,30 +1,34 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class FiresManager : MonoBehaviour
 {
     [Header("Fire-Subduty Associations")]
-    public FireExtinguisher fire1;
-    private int subdutyCt = 0;
+    public List<FireExtinguisher> fires; // List to store multiple fires
 
     public DutyManager dutyManager;
 
-
-    private bool fire1Triggered = false;
-
+    private bool allFiresTriggered = false; // Flag to check if all fires are extinguished
 
     void Update()
     {
-        if (subdutyCt == 1)
+        // If all fires are extinguished, complete the duty
+        if (IsAllFiresExtinguished())
         {
             dutyManager.CompleteDuty();
+            allFiresTriggered = true; // Prevent re-triggering
         }
-        
-        if (!fire1Triggered && fire1.YokOlcak)
-        {
-            fire1Triggered = true;
-            subdutyCt++;// Prevent re-triggering
-        }
+    }
+       
 
-        
+    // Check if all fires are extinguished
+    private bool IsAllFiresExtinguished()
+    {
+        foreach (FireExtinguisher fire in fires)
+        {
+            if (!fire.YokOlcak) // If any fire is not extinguished
+                return false;
+        }
+        return true; // All fires are extinguished
     }
 }
