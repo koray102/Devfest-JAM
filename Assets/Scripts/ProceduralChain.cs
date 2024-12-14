@@ -24,8 +24,8 @@ public class ProceduralChain : MonoBehaviour
         CreateChain(grabPoint, surfaceNormal);
 
         // Attach the first chain link to the player
-        SpringJoint firstLinkJoint = chainLinks[0].GetComponent<SpringJoint>();
-        firstLinkJoint.connectedBody = player.GetComponent<Rigidbody>(); // Attach to player
+        //SpringJoint firstLinkJoint = chainLinks[0].GetComponent<SpringJoint>();
+        //firstLinkJoint.connectedBody = player.GetComponent<Rigidbody>(); // Attach to player
 
         // Attach the last chain link to the wall
         //SpringJoint lastLinkJoint = chainLinks[chainLinks.Length - 1].GetComponent<SpringJoint>();
@@ -33,7 +33,7 @@ public class ProceduralChain : MonoBehaviour
         Destroy(chainLinks[chainLinks.Length - 1].GetComponent<Collider>());
 
         //chainLinks[chainLinks.Length - 1].GetComponent<Rigidbody>().AddForce(transform.forward * 100f , ForceMode.Impulse);
-        StartCoroutine(SimulateThrow(grabPoint));
+        StartCoroutine(SimulateThrow(grabPoint, grabbedObject));
     }
 
 
@@ -88,10 +88,11 @@ public class ProceduralChain : MonoBehaviour
         }
 
         chainLinks[chainLinks.Length - 1].GetComponent<Rigidbody>().isKinematic = true;
+        chainLinks[0].GetComponent<Rigidbody>().isKinematic = true;
     }
 
 
-    private IEnumerator SimulateThrow(Vector3 targetPos)
+    private IEnumerator SimulateThrow(Vector3 targetPos, GameObject grabbedObject)
     {
         float elapsedTime = 0f;
         GameObject lastLink = chainLinks[chainLinks.Length - 1];
@@ -119,6 +120,13 @@ public class ProceduralChain : MonoBehaviour
         Vector3 offset = surfaceNormalThis.normalized * 2.7f;
         //offset = lastLink.transform.InverseTransformDirection(offset);
         lastLink.transform.position = grabPos + offset;
+    }
+
+
+    public void SetFirstChainPosition(Vector3 position)
+    {
+        GameObject firstLink = chainLinks[0];
+        firstLink.transform.position = position;
     }
 
 

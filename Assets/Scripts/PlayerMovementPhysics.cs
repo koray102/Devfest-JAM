@@ -134,6 +134,8 @@ public class PlayerMovementPhysics : MonoBehaviour
             {
                 proceduralChain.SetLastChainPosition(grabPoint);
             }
+
+            proceduralChain.SetFirstChainPosition(transform.position + -transform.right);
             
             SpringSystem(grabPoint);
         }else

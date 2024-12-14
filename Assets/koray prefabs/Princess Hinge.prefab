@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6981816013312274454}
   - component: {fileID: 325368062316133635}
   - component: {fileID: 2062353239623859421}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Princess Hinge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,10 +108,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6630172839339913485}
     m_Modifications:
+    - target: {fileID: 77911515705457536, guid: 588b1ccd7e9e78a42865f6d289230fb7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8594075647667375822, guid: 588b1ccd7e9e78a42865f6d289230fb7,
         type: 3}
       propertyPath: m_Name
       value: Princess Pump
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594075647667375822, guid: 588b1ccd7e9e78a42865f6d289230fb7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8939534107428050036, guid: 588b1ccd7e9e78a42865f6d289230fb7,
         type: 3}

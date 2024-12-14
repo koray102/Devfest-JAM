@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1311178309198088935}
   - component: {fileID: 7036319322209405863}
   - component: {fileID: 4422101882211596101}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Chain (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 7585275896903096208}
   - component: {fileID: 2994548284396848699}
   - component: {fileID: -2075927597834977291}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Chain Link Spring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 9191066534437951088}
   - component: {fileID: 5916082188482456211}
   - component: {fileID: 1688798371980754102}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Chain Link
   m_TagString: Untagged
   m_Icon: {fileID: 0}

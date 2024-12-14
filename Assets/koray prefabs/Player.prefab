@@ -310,8 +310,8 @@ MonoBehaviour:
   ignoreRaycast:
     serializedVersion: 2
     m_Bits: 62
-  springStiffness: 450
-  damperStiffness: 150
+  springStiffness: 650
+  damperStiffness: 300
   proceduralChain: {fileID: 7899392678022400374}
 --- !u!114 &7899392678022400374
 MonoBehaviour:

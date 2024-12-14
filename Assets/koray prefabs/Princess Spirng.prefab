@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5340653280841831759}
   - component: {fileID: 3349090393447372890}
   - component: {fileID: 3349090393447372891}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Princess Spirng
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,10 +96,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8573358771609982036}
     m_Modifications:
+    - target: {fileID: 77911515705457536, guid: 588b1ccd7e9e78a42865f6d289230fb7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8594075647667375822, guid: 588b1ccd7e9e78a42865f6d289230fb7,
         type: 3}
       propertyPath: m_Name
       value: Princess Pump
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594075647667375822, guid: 588b1ccd7e9e78a42865f6d289230fb7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8939534107428050036, guid: 588b1ccd7e9e78a42865f6d289230fb7,
         type: 3}
