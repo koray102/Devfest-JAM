@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3168301012132275556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3168301012132275558}
+  - component: {fileID: 3168301012132275559}
+  m_Layer: 0
+  m_Name: Health
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3168301012132275558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3168301012132275556}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 409.1076, y: 213.82495, z: 33.940414}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3168301012132275559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3168301012132275556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d947b49e9cb9049b9799550dabcf76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  maxHealth: 100
+  smokeDamageRate: 1
+  burnDamageRate: 5
+  bothDamageRate: 10
+  restorePoints: []
+  restoreAmount: 20
+  burningColor: {r: 0.8962264, g: 0.21619618, b: 0.2001008, a: 1}
+  smokedColor: {r: 0.2924528, g: 0.28325617, b: 0.28325617, a: 1}
+  burnedSmokedColor: {r: 0.3490566, g: 0.12074282, b: 0.12074282, a: 1}
+  healthyColor: {r: 1, g: 0.627451, b: 0.5176471, a: 1}
+  smokingDuration: 2
+  burningDuration: 3.5
+  burningVideo: {fileID: 0}
+  smokingVideo: {fileID: 0}
+  fadeDuration: 3.5
+  smokeSound: smokeSound
+  burningSound: burningSound
+  player: {fileID: 0}
